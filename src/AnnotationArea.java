@@ -31,6 +31,14 @@ public class AnnotationArea extends JPanel {
     private Coordinates draggCoordinates;
     private boolean isRect;
 
+    public void setMouseRelease(long mouseRelease) {
+        this.mouseRelease = mouseRelease;
+    }
+
+    public void setMouseNum(long mouseNum) {
+        this.mouseNum = mouseNum;
+    }
+
     public File getImageFile() {
         return imageFile;
     }
@@ -65,6 +73,8 @@ public class AnnotationArea extends JPanel {
 
     public void setImagePath(File imagePath) {
         this.imageFile = imagePath;
+        setMouseNum(0);
+        setMouseRelease(0);
         repaint();
     }
 
@@ -150,6 +160,7 @@ public class AnnotationArea extends JPanel {
         carPart = "tail";
         color = Color.red;
         isRect = false;
+        imageFile = null;
 
 
         setCursor(Cursor.getPredefinedCursor(Cursor.CROSSHAIR_CURSOR));
