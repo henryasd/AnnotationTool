@@ -12,6 +12,38 @@ public class Coordinates {
     private int y3;
     private int x4;
     private int y4;
+    private int label1;
+    private int label2;
+    private int label3;
+
+    public void setLabel1(int label1) {
+        this.label1 = label1;
+    }
+
+    public int getLabel2() {
+        return label2;
+    }
+
+    public void setLabel2(int label2) {
+        this.label2 = label2;
+    }
+
+    public int getLabel3() {
+        return label3;
+    }
+
+    public void setLabel3(int label3) {
+        this.label3 = label3;
+    }
+
+    public int getLabel1() {
+        return label1;
+    }
+
+    public void setlabel1(int label1) {
+        this.label1 = label1;
+    }
+
     private String part;
 
     public Coordinates() {
@@ -24,9 +56,12 @@ public class Coordinates {
         y3 = 0;
         y4 = 0;
         part = "tail";
+        label1 = 0;
+        label2 = 0;
+        label3 = 0;
     }
 
-    public Coordinates(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4, String part) {
+    public Coordinates(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4, String part, int label1, int label2, int label3) {
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
@@ -36,6 +71,9 @@ public class Coordinates {
         this.x4 = x4;
         this.y4 = y4;
         this.part = part;
+        this.label1 = label1;
+        this.label2 = label2;
+        this.label3 = label3;
     }
 
     public int getX1() {
@@ -122,6 +160,9 @@ public class Coordinates {
                 ", x4=" + x4 +
                 ", y4=" + y4 +
                 ", part='" + part + '\'' +
+                "label1=" + label1 +
+                "label2=" + label2 +
+                "label3=" + label3 +
                 '}';
     }
 }

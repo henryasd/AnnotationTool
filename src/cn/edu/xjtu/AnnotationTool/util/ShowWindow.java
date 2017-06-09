@@ -11,11 +11,11 @@ public class ShowWindow {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                f.setTitle("汽车标注程序");
+                f.setTitle("Annotation Tool");
                 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
-                f.setBounds(0, 0, dimension.width, dimension.height-40);
-                //f.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+                f.setBounds(0, 0, dimension.width, dimension.height-50);
+//                f.setSize(Toolkit.getDefaultToolkit().getScreenSize());
                 f.setVisible(true);
             }
         });
